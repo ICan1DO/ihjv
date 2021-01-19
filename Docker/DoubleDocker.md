@@ -41,7 +41,7 @@ evinedeng/jd:github
 ## 第四步: 编辑文件
 
 ```
-cd /usr/docker/jd/config
+cd /usr/docker/jd2/config
 ```
 
 `vim auth.json`
@@ -55,11 +55,11 @@ cd /usr/docker/jd/config
 
 ## 其他
 
-- 重置控制面板用户名和密码
+### 重置控制面板用户名和密码
 
 `docker exec -it jd2 bash jd resetpwd`
 
-- 添加除 lxk 以外的脚本
+### 添加除 lxk 以外的脚本
 
 **以下代码中 Docker 安装位置为 /usr/docker/**
 
@@ -74,15 +74,15 @@ cd /usr/docker/jd/config
 
 *注意：额外添加的脚本不能以 “jd_”、“jr_”、“jx_” 开头，以 “jd_”、“jr_”、“jx_” 开头的任务如果不在 lxk0301 仓库中会被删除！*
 
-- 如果额外脚本需要使用 lxk 仓库文件(仍未琢磨出来)
+### 如果额外脚本需要使用 lxk 仓库文件(仍未琢磨出来)
 
-如果此脚本需要使用 LXK 仓库中的 sendNotify.js 来发送通知，或者用到 jdCookie.js 来处理Cookie
+~~如果此脚本需要使用 LXK 仓库中的 sendNotify.js 来发送通知，或者用到 jdCookie.js 来处理Cookie~~
 
-将此脚本上传至 /usr/docker/jd2/script/ 文件夹下, 然后执行以下代码
+~~将此脚本上传至 /usr/docker/jd2/script/ 文件夹下, 然后执行以下代码~~
 
 ~~`docker cp /usr/docker/test.js jd:/jd/scripts`~~
 
-- 进入容器并查看挂机日志
+### 进入容器并查看挂机日志
 
 先进容器
 
@@ -96,30 +96,24 @@ cd /usr/docker/jd/config
 
 `exit`
 
-- 手动 git pull 更新脚本
+### 手动 git pull 更新脚本
 
 `docker exec -it jd2 bash git_pull`
 
 > 顺便也执行以下这段代码吧 `npm install got`
 
-- 手动删除指定时间以前的旧日志
+### 手动删除指定时间以前的旧日志
 
 `docker exec -it jd2 bash rm_log`
 
-- 手动导出所有互助码
+### 手动导出所有互助码
 
 `docker exec -it jd2 bash export_sharecodes`
 
-- 手动执行一次某个脚本
+### 手动执行一次某个脚本
 
 以执行名为 jd_fruit.js 的文件为例 
 
 `docker exec -it jd2 bash jd.sh jd_fruit now`
 
 其中 `exec` 后面的 `jd2` 为容器名, `bash` 后面的 `jd` 为命令名, `xxx` 为 `lxk` 的脚本名
-
-> 报错的话可能需要用到这两段代码
-
->> `docker exec -it jd2 bash git_pull`
-
->> `npm install got`
