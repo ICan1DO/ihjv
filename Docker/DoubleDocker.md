@@ -1,6 +1,6 @@
 ## 第一步: 创建容器
 
-在命令行依次复制粘贴以下代码, 此时 Docker 的安装位置为 /usr/docker/ ,容器名为 jd2
+在命令行依次复制粘贴以下代码, 此时 Docker 的安装位置为 /usr/docker/, 容器名为 jd2
 
 ```
 docker run -dit \
