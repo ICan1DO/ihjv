@@ -8,7 +8,7 @@
 
 ### 产看创建日志
 
-`cd /docker/jd/config`
+`docker logs -f jd`
 
 ### 查看所有容器情况
 
