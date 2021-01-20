@@ -29,13 +29,13 @@ sudo yum install docker-ce
 
 ## 第二步: 创建容器
 
-以下代码中 Docker 安装位置为 /usr/docker/ 
+以下代码中 Docker 安装位置为 /docker/ 
 
 ```
 docker run -dit \
--v /usr/docker/jd/scripts:/jd/scripts \
--v /usr/docker/jd/config:/jd/config \
--v /usr/docker/jd/log:/jd/log \
+-v /docker/jd/scripts:/jd/scripts \
+-v /docker/jd/config:/jd/config \
+-v /docker/jd/log:/jd/log \
 -p 5678:5678 \
 --name jd \
 --hostname jd \
@@ -56,7 +56,7 @@ evinedeng/jd:github
 ## 第五步: 编辑文件
 
 ```
-cd /usr/docker/jd/config
+cd /docker/jd/config
 ```
 
 `vim auth.json`
