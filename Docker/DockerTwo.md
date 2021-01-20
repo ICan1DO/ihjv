@@ -55,10 +55,6 @@ cd /docker/jd2/config
 
 ## 其他
 
-### 重置控制面板用户名和密码
-
-`docker exec -it jd2 bash jd resetpwd`
-
 ### 添加除 lxk 以外的脚本
 
 **以下代码中 Docker 安装位置为 /docker/**

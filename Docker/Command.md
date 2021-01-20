@@ -32,6 +32,10 @@ docker kill jd
 docker rm -f jd
 ```
 
+### 重置控制面板用户名和密码
+
+`docker exec -it jd2 bash jd resetpwd`
+
 ### 手动拉取脚本
 
 `docker exec -it <容器名> bash git_pull`
@@ -57,6 +61,10 @@ docker rm -f jd
 即
 
 `docker exec -it jd bash jd.sh jd_fruit now`
+
+#### 拉取失败时
+
+`npm install got`
 
 ### 进入容器查看挂机日志
 
