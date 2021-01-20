@@ -10,6 +10,10 @@
 
 `cd /docker/jd/config`
 
+### 查看所有容器情况
+
+`docker ps -a`
+
 ### 启动、停止、杀死、删除容器
 
 ```

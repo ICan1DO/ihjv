@@ -7,7 +7,7 @@ docker run -dit \
 -v /docker/jd2/scripts:/jd/scripts \
 -v /docker/jd2/config:/jd/config \
 -v /docker/jd2/log:/jd/log \
--p 5678:5679 \
+-p 5679:5679 \
 --name jd2 \
 --hostname jd2 \
 --restart always \
