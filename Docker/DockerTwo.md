@@ -1,6 +1,6 @@
-## 第一步: 创建容器
+## 第一步: 创建第二个容器
 
-在命令行依次复制粘贴以下代码, 此时 Docker 的安装位置为 /docker/, 容器名为 jd2
+在命令行依次复制粘贴以下代码, 此时 Docker 的安装位置为 /docker/, 容器名为 jd2, 如果没有配置加速, 最后一行推荐使用 `evinedeng/jd:gitee`
 
 ```
 docker run -dit \
