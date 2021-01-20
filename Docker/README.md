@@ -24,7 +24,7 @@
 
 - [x] [其它问题](https://github.com/YamTian/Notes/blob/master/Docker/OtherScript.md)
 
-- [x] [添加 shylocks 京东脚本](https://github.com/YamTian/Notes/blob/master/Docker/Diy.sh.md)
+- [x] ~~[添加 shylocks 京东脚本](https://github.com/YamTian/Notes/blob/master/Docker/Diy.sh.md)~~
 
 - [x] [多容器并发](https://github.com/YamTian/Notes/blob/master/Docker/DockerTwo.md)
 
