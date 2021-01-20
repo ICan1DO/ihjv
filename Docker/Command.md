@@ -48,7 +48,7 @@ docker rm -f jd
 
 即
 
-`docker exec -it jd bash jd.sh <脚本名(不带.js)>`
+`docker exec -it jd bash jd.sh jd_fruit`
 
 - 立即执行脚本
 
@@ -56,7 +56,7 @@ docker rm -f jd
 
 即
 
-`docker exec -it jd bash jd.sh <脚本名(不带.js)> now`
+`docker exec -it jd bash jd.sh jd_fruit now`
 
 ### 进入容器查看挂机日志
 
