@@ -6,7 +6,7 @@
 
 ### 基本信息
 
-1. 服务器: [AliCloud 轻量应用服务器](https://www.aliyun.com/product/swas)
+1. 服务器: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
 
 2. 用户类型: 开发者成长计划
 
