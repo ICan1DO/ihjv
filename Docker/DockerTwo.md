@@ -44,13 +44,13 @@ evinedeng/jd:github
 cd /docker/jd2/config
 ```
 
-`vim auth.json`
+`vi auth.json`
 > auth.json 文件是用户账号和密码, 修改完按 ESC 输入 :wq 保存并退出
 
-`vim congif.sh`
+`vi congif.sh`
 > config.sh 文件是脚本变量设置, 按文件内说明即可, 修改完按 ESC 输入 :wq 保存并退出
 
-`crontab.list`
+`vi crontab.list`
 > crontab.list 文件是脚本运行时间, 按文件内格式编写修改完按 ESC 输入 :wq 保存并退出
 
 ## 其他
