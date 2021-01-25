@@ -29,7 +29,7 @@ sudo yum install docker-ce
 
 ## 第二步: 创建容器
 
-复制粘贴回车以下代码, 此中 Docker 的安装位置为 /docker/
+复制粘贴回车以下代码, 此中 `Docker` 的安装位置为 `/docker/`
 
 - 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`, 速度慢一点罢了
 
@@ -53,9 +53,9 @@ evinedeng/jd:gitee
 
 `docker logs -f jd`
 
-> 直到出现容器启动成功...字样才代表启动成功, 按 Ctrl+C 退出查看日志
+> 直到出现 `容器启动成功...` 字样才代表启动成功, 按 `Ctrl+C` 退出查看日志
 
-## 第五步：验证
+## 第五步: 验证
 
 手动立即跑一次 `jd_fruit.js` 脚本
 
@@ -67,29 +67,41 @@ evinedeng/jd:gitee
 
 ## 第六步: 编辑文件
 
-### 方法一：在 CentOS 中编辑
+### 方法一: 在 CentOS 中编辑
 
 ```
 cd /docker/jd/config
 ```
 
 `vi auth.json`
-> auth.json 文件是用户账号和密码, 修改完按 ESC 输入 :wq 保存并退出
+
+-  `auth.json` 文件是用户账号和密码, 修改完按 `ESC` 输入 `:wq` 保存并退出
 
 `vi congif.sh`
-> config.sh 文件是脚本变量设置, 按文件内说明即可, 修改完按 ESC 输入 :wq 保存并退出
+
+- `config.sh` 文件是脚本变量设置, 按文件内说明即可, 修改完按 `ESC` 输入 `:wq` 保存并退出
 
 `vi crontab.list`
-> crontab.list 文件是脚本运行时间, 按文件内格式编写修改完按 ESC 输入 :wq 保存并退出
 
-### 方法二：在线编辑
+- `crontab.list` 文件是脚本运行时间, 按文件内格式编写修改完按 `ESC` 输入 `:wq` 保存并退出
 
-首先在服务器的防火墙中添加规则
+### 方法二: 在线编辑
+
+- 优点: 后期编辑文件、获取 `Cookie` 比较方便
+
+- 缺点: 前期一般需要对服务器进行一些设置
+
+1. 首先在服务器的防火墙中添加规则
 
 - 协议: `TCP` 端口: `5684`
 
-浏览器访问 http://<ip>:5684
+2. 浏览器访问 http://<ip>:5684
 
-- ip 即为你服务器的外网 ip
+- `ip` 即为你服务器的外网 `ip`
 
-- 初始账号密码分别为 `admin` `adminadmin`
+- 初始账号密码分别为 `admin` 和 `adminadmin`
+
+## 第七步: 学习更多命令
+
+[学习使用频率较高的 Docker 命令](https://github.com/chiupam/Notes/blob/main/Docker/Command.md)
+
