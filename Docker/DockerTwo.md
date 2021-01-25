@@ -1,6 +1,8 @@
 ## 第一步: 创建第二个容器
 
-以下代码中 Docker 安装位置为 /docker/, 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`
+以下代码中 Docker 安装位置为 /docker/, 
+
+- 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`, 速度慢一点罢了
 
 ```
 docker run -dit \
@@ -11,7 +13,7 @@ docker run -dit \
 --name jd2 \
 --hostname jd2 \
 --restart always \
-evinedeng/jd:github
+evinedeng/jd:gitee
 ```
 
 对比下面这段第一次创建容器的代码, 有些许不同, 主要有
@@ -33,7 +35,7 @@ docker run -dit \
 --name jd \
 --hostname jd \
 --restart always \
-evinedeng/jd:github
+evinedeng/jd:gitee
 ```
 
 ## 第二步: 启动 Docker 服务
@@ -48,7 +50,19 @@ evinedeng/jd:github
 
 > 直到出现容器启动成功...字样才代表启动成功, 按 Ctrl+C 退出查看日志
 
-## 第四步: 编辑文件
+## 第四步：验证
+
+手动立即跑一次 `jd_fruit.js` 脚本
+
+`docker exec -it jd bash jd.sh fruit now`
+
+- 输出 `"请先获取Cookie"` 则视为成功
+
+  - 如果使用 `evinedeng/jd:github` 的请耐心等待再试上面那句代码
+
+## 第五步: 编辑文件
+
+### 方法一：在 CentOS 中编辑
 
 ```
 cd /docker/jd2/config
@@ -63,24 +77,14 @@ cd /docker/jd2/config
 `vi crontab.list`
 > crontab.list 文件是脚本运行时间, 按文件内格式编写修改完按 ESC 输入 :wq 保存并退出
 
-### 手动 git pull 更新脚本
+### 方法二：在线编辑
 
-`docker exec -it jd2 bash git_pull`
+首先在服务器的防火墙中添加规则
 
-> 顺便也执行以下这段代码吧 `npm install got`
+- 协议: `TCP` 端口: `5685`
 
-### 手动删除指定时间以前的旧日志
+浏览器访问 http://<ip>:5685
 
-`docker exec -it jd2 bash rm_log`
+- ip 即为你服务器的外网 ip
 
-### 手动导出所有互助码
-
-`docker exec -it jd2 bash export_sharecodes`
-
-### 手动执行一次某个脚本
-
-以执行名为 jd_fruit.js 的文件为例 
-
-`docker exec -it jd2 bash jd.sh jd_fruit now`
-
-其中 `exec` 后面的 `jd2` 为容器名, `bash` 后面的 `jd` 为命令名, `xxx` 为 `lxk` 的脚本名
+- 初始账号密码分别为 `admin` `adminadmin`

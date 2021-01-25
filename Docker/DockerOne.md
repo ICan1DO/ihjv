@@ -31,14 +31,14 @@ sudo yum install docker-ce
 
 复制粘贴回车以下代码, 此中 Docker 的安装位置为 /docker/
 
-- 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`
+- 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`, 速度慢一点罢了
 
 ```
 docker run -dit \
 -v /docker/jd/scripts:/jd/scripts \
 -v /docker/jd/config:/jd/config \
 -v /docker/jd/log:/jd/log \
--p 5678:5678 \
+-p 5684:5678 \
 --name jd \
 --hostname jd \
 --restart always \
@@ -55,7 +55,7 @@ evinedeng/jd:gitee
 
 > 直到出现容器启动成功...字样才代表启动成功, 按 Ctrl+C 退出查看日志
 
-## 第六步：验证
+## 第五步：验证
 
 手动立即跑一次 `jd_fruit.js` 脚本
 
@@ -67,26 +67,29 @@ evinedeng/jd:gitee
 
 ## 第六步: 编辑文件
 
+### 方法一：在 CentOS 中编辑
+
 ```
 cd /docker/jd/config
 ```
 
-### 修改在线编辑面板用户账号和密码
-
 `vi auth.json`
-
-- auth.json 文件是用户账号和密码, 修改完按 ESC 输入 :wq 保存并退出
-
-### 修在脚本变量
+> auth.json 文件是用户账号和密码, 修改完按 ESC 输入 :wq 保存并退出
 
 `vi congif.sh`
-
-- config.sh 文件是脚本变量设置, 按文件内说明即可, 修改完按 ESC 输入 :wq 保存并退出
-
-### 修改脚本执行时间
+> config.sh 文件是脚本变量设置, 按文件内说明即可, 修改完按 ESC 输入 :wq 保存并退出
 
 `vi crontab.list`
+> crontab.list 文件是脚本运行时间, 按文件内格式编写修改完按 ESC 输入 :wq 保存并退出
 
-- crontab.list 文件是脚本执行时间, 按文件内格式编写修改完按 ESC 输入 :wq 保存并退出
+### 方法二：在线编辑
 
+首先在服务器的防火墙中添加规则
 
+- 协议: `TCP` 端口: `5684`
+
+浏览器访问 http://<ip>:5684
+
+- ip 即为你服务器的外网 ip
+
+- 初始账号密码分别为 `admin` `adminadmin`
