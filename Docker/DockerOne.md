@@ -29,7 +29,9 @@ sudo yum install docker-ce
 
 ## 第二步: 创建容器
 
-以下代码中 Docker 安装位置为 /docker/, 如果没有配置加速, 最后一行推荐使用 `evinedeng/jd:gitee`
+复制粘贴回车以下代码, 此中 Docker 的安装位置为 /docker/
+
+- 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`
 
 ```
 docker run -dit \
@@ -40,7 +42,7 @@ docker run -dit \
 --name jd \
 --hostname jd \
 --restart always \
-evinedeng/jd:github
+evinedeng/jd:gitee
 ```
 
 ## 第三步: 启动 Docker 服务
@@ -53,17 +55,38 @@ evinedeng/jd:github
 
 > 直到出现容器启动成功...字样才代表启动成功, 按 Ctrl+C 退出查看日志
 
-## 第五步: 编辑文件
+## 第六步：验证
+
+手动立即跑一次 `jd_fruit.js` 脚本
+
+`docker exec -it jd bash jd.sh fruit now`
+
+- 输出 `"请先获取Cookie"` 则视为成功
+
+  - 如果使用 `evinedeng/jd:github` 的请耐心等待再试上面那句代码
+
+## 第六步: 编辑文件
 
 ```
 cd /docker/jd/config
 ```
 
+### 修改在线编辑面板用户账号和密码
+
 `vi auth.json`
-> auth.json 文件是用户账号和密码, 修改完按 ESC 输入 :wq 保存并退出
+
+- auth.json 文件是用户账号和密码, 修改完按 ESC 输入 :wq 保存并退出
+
+### 修在脚本变量
 
 `vi congif.sh`
-> config.sh 文件是脚本变量设置, 按文件内说明即可, 修改完按 ESC 输入 :wq 保存并退出
+
+- config.sh 文件是脚本变量设置, 按文件内说明即可, 修改完按 ESC 输入 :wq 保存并退出
+
+### 修改脚本执行时间
 
 `vi crontab.list`
-> crontab.list 文件是脚本运行时间, 按文件内格式编写修改完按 ESC 输入 :wq 保存并退出
+
+- crontab.list 文件是脚本执行时间, 按文件内格式编写修改完按 ESC 输入 :wq 保存并退出
+
+
