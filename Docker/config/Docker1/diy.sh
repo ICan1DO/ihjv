@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-my_scripts_list="jd_gyec.js jd_mh.js jd_ms.js jd_super_coupon.js jd_live_redrain2.js "  # 你想下载的js文件清单
-scripts_base_url=https://raw.fastgit.org/shylocks/Loon/main/   # raw文件的基础网址(国内镜像源)
+my_scripts_list="jd_live_redrain.js jd_live_redrain2.js jd_live_redrain_half.js jd_live_redrain_nian.js jd_live_redrain_offical.js"  # 你想下载的js文件清单
+scripts_base_url=https://raw.fastgit.org/YamTian/Backup/shylock-Loon-master/   # raw文件的基础网址(国内镜像源)
 
 cd $ScriptsDir   # 在 git_pull.sh 中已经定义 ScriptsDir 此变量，diy.sh 由 git_pull.sh 调用，因此可以直接使用此变量
 for js in $my_scripts_list
