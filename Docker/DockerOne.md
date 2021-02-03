@@ -23,15 +23,13 @@ sudo yum makecache fast
 sudo yum install docker-ce
 ```
 
-6. 防后面报错
+## 第二步: 启动 Docker 服务
 
-`npm install got`
+`service docker start`
 
-## 第二步: 创建容器
+## 第三步: 创建容器
 
 复制粘贴回车以下代码, 此中 `Docker` 的安装位置为 `/docker/`
-
-- 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`, 速度慢一点罢了
 
 ```
 docker run -dit \
@@ -44,10 +42,6 @@ docker run -dit \
 --restart always \
 evinedeng/jd:gitee
 ```
-
-## 第三步: 启动 Docker 服务
-
-`service docker start`
 
 ## 第四步: 查看创建日志
 
