@@ -2,8 +2,6 @@
 
 以下代码中 `Docker` 安装位置为 `/docker/`, 
 
-- 最后一行推荐使用 `evinedeng/jd:gitee`, 也可以用 `evinedeng/jd:github`, 速度慢一点罢了
-
 ```
 docker run -dit \
 -v /docker/jd2/scripts:/jd/scripts \
