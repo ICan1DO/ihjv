@@ -32,6 +32,6 @@ pm2 startup
 
 ## VPS Firewall Rules
 
-1. Type: TCP
+1. Rule Type: TCP
 
 2. Port: 8181/8182
