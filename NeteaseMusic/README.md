@@ -14,16 +14,16 @@ pm2 save
 pm2 startup
 ```
 
-## Surge Proxy Server
+## Surge Proxy Servers
 
-1. 协议: HTTP
+1. Proxy Type: HTTP
 
-2. 服务器地址: 外网ip
+2. Server: Your ip
 
-3. 端口: 8181
+3. Port: 8181
 
-## VPS 防火墙规则设置
+## VPS Firewall Rules
 
-1. 类型: TCP
+1. Type: TCP
 
-2. 端口: 8181/8182
+2. Port: 8181/8182
