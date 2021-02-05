@@ -1,6 +1,10 @@
 ## UnblockNeteaseMusic
 
-Only For CentOS 7.6
+Use the server to build an unlock Netease Cloud Music node.
+
+## Precondition
+
+Mirroring system: CentOS 7.6
 
 ```
 curl -sL https://rpm.nodesource.com/setup_12.x | bash -
