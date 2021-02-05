@@ -4,6 +4,8 @@ Use the server to build an unlock Netease Cloud Music node.
 
 ## Precondition
 
+Server: Ali Cloud Elastic Service
+
 Mirroring system: CentOS 7.6
 
 ## Command Code
