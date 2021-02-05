@@ -14,7 +14,7 @@ pm2 save
 pm2 startup
 ```
 
-## Surge 代理服务器设置
+## Surge Proxy Server
 
 1. 协议: HTTP
 
