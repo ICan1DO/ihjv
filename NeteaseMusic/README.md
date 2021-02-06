@@ -10,6 +10,8 @@ Mirroring system: CentOS 7.6
 
 ## Deployment command
 
+### Method I: Only iOS
+
 ```
 curl -sL https://rpm.nodesource.com/setup_12.x | bash -
 yum install nodejs -y
@@ -17,7 +19,21 @@ npm install pm2 -g
 yum install git
 git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git
 cd UnblockNeteaseMusic
-pm2 start app.js --name UnblockNeteaseMusic -- -s -e https://music.163.com -o kuwo qq migu -p 8888:8889
+pm2 start app.js --name UnblockNeteaseMusic -- -s -o kuwo qq migu -p 8888:8889 -e https://music.163.com
+pm2 save
+pm2 startup
+```
+
+### Method II: Only PC
+
+```
+curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+yum install nodejs -y
+npm install pm2 -g
+yum install git
+git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git
+cd UnblockNeteaseMusic
+pm2 start app.js --name UnblockNeteaseMusic -- -s -o kuwo qq migu -p 8886:8887
 pm2 save
 pm2 startup
 ```
@@ -36,31 +52,59 @@ pm2 startup
 
 3. Port: 8888
 
+## NeteaseMusic(PC) Proxy Servers
+
+1. Proxy Type: HTTP
+
+2. Server: Your VPS ip
+
+3. Port: 8886
+
 ## VPS Firewall Rules
 
 1. Rule Type: TCP
 
-2. Port: 8888/8889
+2. Port: 8886/8889
 
 ## pm2 Common Commands
 
-1. `pm2 stop UnblockNeteaseMusic` # Stop the service
+```
+# Stop the service
 
-2. `pm2 restart UnblockNeteaseMusic` # restart service
+pm2 stop UnblockNeteaseMusic
 
-3. `pm2 pull UnblockNeteaseMusic` # Update service to the latest code
+# restart service
 
-4. `pm2 show UnblockNeteaseMusic` # View service parameter information
+pm2 restart UnblockNeteaseMusic
 
-5. `pm2 log UnblockNeteaseMusic` # View service log
+# Update service to the latest code
 
-6. `pm2 ls` # View the list of deployed services
+pm2 pull UnblockNeteaseMusic
 
-7. `pm2 monit` # Monitor service status
+# View service parameter information
 
-8. `pm2 flush` # Clean up all log files
+pm2 show UnblockNeteaseMusic
 
-9. `pm2 update` # Update pm2 status
+# View service log
+
+pm2 log UnblockNeteaseMusic
+
+# View the list of deployed services
+
+pm2 ls
+
+# Monitor service status
+
+pm2 monit
+
+# Clean up all log files
+
+pm2 flush
+
+# Update pm2 status
+
+pm2 update
+```
 
 ## More
 
