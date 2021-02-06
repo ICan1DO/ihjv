@@ -1,57 +1,57 @@
-## 基本命令查询
+## Basic command query
 
-此笔记中的容器名为 jd 或者 jd2
+The container in this note is named jd or jd2
 
-### 查看所有容器情况
+### View all container conditions
 
 `docker ps -a`
 
-- 服务器输出的表格中的 `NAMES` 下面即为容器名
+- The name of the container is under `NAMES` in the table output by the server
 
-### 启动 Docker 服务
+### Start Docker service
 
 `service docker start`
 
-### 产看创建日志
+### View creation log
 
-`docker logs -f 容器名`
+`docker logs -f NAMES`
 
-### 启动、停止、杀死、删除容器
+### Start, stop, kill, delete container
 
 ```
-docker start 容器名
-docker stop 容器名
-docker kill 容器名
-docker rm -f 容器名
+docker start NAMES
+docker stop NAMES
+docker kill NAMES
+docker rm -f NAMES
 ```
 
-### 重置控制面板用户名和密码
+### Reset control panel username and password
 
-`docker exec -it 容器名 bash jd resetpwd`
+`docker exec -it NAMES bash jd resetpwd`
 
-### 手动拉取脚本
+### Manually pull javascript
 
-`docker exec -it 容器名 bash git_pull`
+`docker exec -it NAMES bash git_pull`
 
-### 手动执行脚本
+### Manually execute the javascript
 
-- 延迟 RandomDelay 秒后执行脚本, RandomDelay 在 config.sh 中设置
+- Execute the javascript after delaying RandomDelay seconds, RandomDelay is set in config.sh
 
-`docker exec -it 容器名 bash jd.sh 脚本名(不带.js)`
+`docker exec -it NAMES bash jd.sh javascript`
 
-- 立即执行脚本
+- Execute javascript immediately
 
-`docker exec -it 容器名 bash jd.sh 脚本名(不带.js) now`
+`docker exec -it NAMES bash jd.sh javascript now`
 
-### 进入容器查看挂机日志
+### Enter the container to view the hangup log
 
-`docker exec -it 容器名 /bin/bash`
+`docker exec -it NAMES /bin/bash`
 
-然后
+Then
 
 `pm2 monit`
 
-退出
+Exit
 
 `exit`
 

@@ -1,6 +1,6 @@
-## 第一步: 创建第二个容器
+## Step 1: Create a second container
 
-以下代码中 `Docker` 安装位置为 `/docker/`, 
+The installation location of `Docker` in the following code is `/docker/`,
 
 ```
 docker run -dit \
@@ -14,15 +14,7 @@ docker run -dit \
 evinedeng/jd:gitee
 ```
 
-对比下面这段第一次创建容器的代码, 有些许不同, 主要有
-
-- 第二次容器名为 `jd2`
-
-  - `--name jd2`
-
-- 第二次容器端口为 `5685`
-
-  - `-p 5685:5678`
+Compare the following code for creating a container for the first time
 
 ```
 docker run -dit \
@@ -36,31 +28,35 @@ docker run -dit \
 evinedeng/jd:gitee
 ```
 
-## 第二步: 启动 Docker 服务
+Comparison table
 
-~~`service docker start`~~
+||First|Second|
+|:-:|:-:|:-:|
+|Storage path|`/docker/jd/`|`/docker/jd2/`|
+|Open port|`-p 5684:5678`|`-p 5685:5678`|
+|Container name|`--name jd`|`--name jd2`|
 
-- 其实此步骤应该省略
+## Step 2: View the creation log
 
-## 第三步: 查看创建日志
+`docker logs -f jd`
 
-`docker logs -f jd2`
+> Until the words `容器启动成功...` appears, it means the start is successful, press `Ctrl+C` to exit and view the log
 
-> 直到出现 `容器启动成功...` 字样才代表启动成功, 按 `Ctrl+C` 退出查看日志
+## Step 3: git_pull
 
-## 第四步: 验证
+`docker exec -it jd2 bash git_pull`
 
-手动立即跑一次 `jd_fruit.js` 脚本
+## Step 4: Verify that the installation is successful
+
+Run the `jd_fruit.js` script immediately once manually
 
 `docker exec -it jd bash jd.sh fruit now`
 
-- 输出 `"请先获取Cookie"` 则视为成功
+-Output `"请先获取Cookie..."`, it will be regarded as successful
 
-  - 如果使用 `evinedeng/jd:github` 的请耐心等待再试上面那句代码
+## Step 5: Edit the file
 
-## 第五步: 编辑文件
-
-### 方法一: 在 CentOS 中编辑
+### Method 1: Edit in CentOS
 
 ```
 cd /docker/jd/config
@@ -68,32 +64,31 @@ cd /docker/jd/config
 
 `vi auth.json`
 
--  `auth.json` 文件是用户账号和密码, 修改完按 `ESC` 输入 `:wq` 保存并退出
+-  `auth.json` User account and password. After modifying, press `ESC` and enter `:wq` to save and exit
 
 `vi congif.sh`
 
-- `config.sh` 文件是脚本变量设置, 按文件内说明即可, 修改完按 `ESC` 输入 `:wq` 保存并退出
+- `config.sh` Setting script variables, just follow the instructions in the file, after modifying, press `ESC` to enter `:wq` to save and exit
 
 `vi crontab.list`
 
-- `crontab.list` 文件是脚本运行时间, 按文件内格式编写修改完按 `ESC` 输入 `:wq` 保存并退出
+- `crontab.list` Setting the running time of the javascript. After writing and modifying according to the format in the file, press `ESC` to enter `:wq` to save and exit
 
-### 方法二: 在线编辑
+### Method 2: online editing
 
-- 优点: 后期编辑文件、获取 `Cookie` 比较方便
+|Advantages|Disadvantages|
+|:-:|:-:|
+|more convenient|modify server's firewall|
 
-- 缺点: 前期一般需要对服务器进行一些设置
+1. Add rules in the server's firewall, Protocol: `TCP` , Port: `5685`
 
-1. 首先在服务器的防火墙中添加规则
+2. Use a browser to access `http://<ip>:5685`
 
-- 协议: `TCP` 端口: `5685`
+- `ip` is the external network of your server `ip`
 
-2. 浏览器访问 `http://<ip>:5685`
+- The initial account password is `admin` and `adminadmin`
 
-- `ip` 即为你服务器的外网 `ip`
+## Step 3: learn more commands
 
-- 初始账号密码分别为 `admin` 和 `adminadmin`
+[Learn to use frequently used Docker commands](https://github.com/chiupam/Notes/blob/main/Docker/Command.md)
 
-## 第六步: 学习更多命令
-
-[学习使用频率较高的 Docker 命令](https://github.com/chiupam/Notes/blob/main/Docker/Command.md)

@@ -1,35 +1,26 @@
-## 第一步: 安装 Docker
+## Step 1: Install Docker
 
-1. 如果之前安装过 Docker 需要先卸载
+1. If you have installed Docker before, you need to uninstall it first
 
 `sudo yum remove docker docker-common docker-selinux docker-engine`
 
-2. 安装依赖
-
-`sudo yum install -y yum-utils device-mapper-persistent-data lvm2`
-
-3. 下载 repo 文件(CentOS)
-
-`wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo`
-
-4. 把软件仓库地址替换为 TUNA
-
-`sudo sed -i 's+download.docker.com+mirrors.bfsu.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo`
-
-5. 最后安装
+2. Install
 
 ```
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo sed -i 's+download.docker.com+mirrors.bfsu.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
 sudo yum makecache fast
 sudo yum install docker-ce
 ```
 
-## 第二步: 启动 Docker 服务
+## Step 2: Start Docker service
 
 `service docker start`
 
-## 第三步: 创建容器
+## Step 3: Create a image
 
-复制粘贴回车以下代码, 此中 `Docker` 的安装位置为 `/docker/`
+Copy and paste the following code and press Enter, where the installation location of `Docker` is `/docker/`
 
 ```
 docker run -dit \
@@ -43,25 +34,27 @@ docker run -dit \
 evinedeng/jd:gitee
 ```
 
-## 第四步: 查看创建日志
+## Step 4: View the creation log
 
 `docker logs -f jd`
 
-> 直到出现 `容器启动成功...` 字样才代表启动成功, 按 `Ctrl+C` 退出查看日志
+> Until the words `容器启动成功...` appears, it means the start is successful, press `Ctrl+C` to exit and view the log
 
-## 第五步: 验证
+## Step 5: git_pull
 
-手动立即跑一次 `jd_fruit.js` 脚本
+`docker exec -it jd bash git_pull`
+
+## Step 6: Verify that the installation is successful
+
+Run the `jd_fruit.js` script immediately once manually
 
 `docker exec -it jd bash jd.sh fruit now`
 
-- 输出 `"请先获取Cookie"` 则视为成功
+- Output `"请先获取Cookie..."`, it will be regarded as successful
 
-  - 如果使用 `evinedeng/jd:github` 的请耐心等待再试上面那句代码
+## Step 7: Edit the file
 
-## 第六步: 编辑文件
-
-### 方法一: 在 CentOS 中编辑
+### Method 1: Edit in CentOS
 
 ```
 cd /docker/jd/config
@@ -69,33 +62,31 @@ cd /docker/jd/config
 
 `vi auth.json`
 
--  `auth.json` 文件是用户账号和密码, 修改完按 `ESC` 输入 `:wq` 保存并退出
+-  `auth.json` User account and password. After modifying, press `ESC` and enter `:wq` to save and exit
 
 `vi congif.sh`
 
-- `config.sh` 文件是脚本变量设置, 按文件内说明即可, 修改完按 `ESC` 输入 `:wq` 保存并退出
+- `config.sh` Setting script variables, just follow the instructions in the file, after modifying, press `ESC` to enter `:wq` to save and exit
 
 `vi crontab.list`
 
-- `crontab.list` 文件是脚本运行时间, 按文件内格式编写修改完按 `ESC` 输入 `:wq` 保存并退出
+- `crontab.list` Setting the running time of the javascript. After writing and modifying according to the format in the file, press `ESC` to enter `:wq` to save and exit
 
-### 方法二: 在线编辑
+### Method 2: Edit Online
 
-- 优点: 后期编辑文件、获取 `Cookie` 比较方便
+|Advantages|Disadvantages|
+|:-:|:-:|
+|more convenient|modify server's firewall|
 
-- 缺点: 前期一般需要对服务器进行一些设置
+1. Add rules in the server's firewall, Protocol: `TCP`, Port: `5684`
 
-1. 首先在服务器的防火墙中添加规则
+2. Use a browser to access `http://<ip>:5684`
 
-- 协议: `TCP` 端口: `5684`
+- `ip` is the external network of your server `ip`
 
-2. 浏览器访问 `http://<ip>:5684`
+- The initial account password is `admin` and `adminadmin`
 
-- `ip` 即为你服务器的外网 `ip`
+## Step 8: Learn more commands
 
-- 初始账号密码分别为 `admin` 和 `adminadmin`
-
-## 第七步: 学习更多命令
-
-[学习使用频率较高的 Docker 命令](https://github.com/chiupam/Notes/blob/main/Docker/Command.md)
+[Learn to use frequently used Docker commands](https://github.com/chiupam/Notes/blob/main/Docker/Command.md)
 
