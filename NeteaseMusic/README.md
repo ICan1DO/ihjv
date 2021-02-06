@@ -17,10 +17,11 @@ npm install pm2 -g
 yum install git
 git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git
 cd UnblockNeteaseMusic
-pm2 start app.js --name UnblockNeteaseMusic -- -s -e https://music.163.com -o netease qq xiami kugou kuwo -p 8888:8889
+pm2 start app.js --name UnblockNeteaseMusic -- -s -e https://music.163.com -o kuwo qq migu -p 8888:8889
 pm2 save
 pm2 startup
 ```
+
 ## Install Crt
 
 1. Use safari to click [here](https://raw.githubusercontent.com/nondanee/UnblockNeteaseMusic/master/ca.crt) to enter and install the certificate.
@@ -31,7 +32,7 @@ pm2 startup
 
 1. Proxy Type: HTTP
 
-2. Server: Your ip
+2. Server: Your VPS ip
 
 3. Port: 8888
 
@@ -64,3 +65,5 @@ pm2 startup
 ## More
 
 - [nondanee/UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)
+
+- [如风 —— UnblockNeteaseMusic 使用方法](https://desperadoj.com/17.html)
