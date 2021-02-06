@@ -29,7 +29,7 @@ pm2 startup
 1. Install...
 
 ```
-curl -sL https://rpm.nodesource.com/setup_10.x | bash - 
+curl -sL https://rpm.nodesource.com/setup_12.x | bash -
 yum -y install nodejs -y
 yum -y install epel-release
 yum -y install supervisor
