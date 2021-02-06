@@ -134,4 +134,6 @@ pm2 update
 
 - [nondanee/UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)
 
+- [Sabrina —— 解锁网易云灰色歌曲](https://merlinblog.xyz/wiki/neteasemusic.html)
+
 - [如风 —— UnblockNeteaseMusic 使用方法](https://desperadoj.com/17.html)
