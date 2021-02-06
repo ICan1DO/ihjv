@@ -1,39 +1,31 @@
 <h1 align="center">
-  Docker 部署笔记
+  Docker Deployment Notes
   <br>
   Author: YamTian
 </h1>
 
-### 基本信息
+### Description
 
-1. 服务器: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
+The docker hub image file has been deleted, so I decided to make this [repository](https://github.com/YamTian/Notes) public.
 
-2. 用户类型: 开发者成长计划
+Unfortunately, using this method to deploy Docker is no longer valid.
 
-3. 系统配置: 1核/2G/40GB/5Mbps
+### Server Configuration
 
-4. 镜像系统: CentOS 7.6
+1. Server: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
 
-5. SSH 工具: [FinalShell](http://www.hostbuf.com/t/988.html)
+2. Mirror system: CentOS 7.6
 
-6. 部署时间: 2021-02-17 21:30
+3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html)
 
-### 笔记
+### Notes
 
-- [x] [基本部署并执行](https://github.com/YamTian/Notes/blob/master/Docker/DockerOne.md)
+- [x] [Basic deployment and execution](https://github.com/YamTian/Notes/blob/master/Docker/DockerOne.md)
 
-- [x] [其它问题](https://github.com/YamTian/Notes/blob/master/Docker/OtherScript.md)
+- [x] [Multi-container concurrency](https://github.com/YamTian/Notes/blob/master/Docker/DockerTwo.md)
 
-- [x] ~~[添加 shylocks 京东脚本](https://github.com/YamTian/Notes/blob/master/Docker/Diy.sh.md)~~(已整合到 LXK 库)
+- [x] [Basic command query](https://github.com/YamTian/Notes/blob/master/Docker/Command.md)
 
-- [x] [多容器并发](https://github.com/YamTian/Notes/blob/master/Docker/DockerTwo.md)
+### Reference
 
-- [x] [基本命令查询](https://github.com/YamTian/Notes/blob/master/Docker/Command.md)
-
-### 参考
-
-- [EvineDeng](https://github.com/EvineDeng/jd-base/wiki/Doc_v3)
-
-### 说明
-
-已全部失效~~
+- EvineDeng
