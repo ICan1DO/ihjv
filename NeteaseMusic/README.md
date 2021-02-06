@@ -8,7 +8,7 @@ Server: Ali Cloud Elastic Service
 
 Mirroring system: CentOS 7.6
 
-## Command Code
+## Deployment command
 
 ```
 curl -sL https://rpm.nodesource.com/setup_12.x | bash -
