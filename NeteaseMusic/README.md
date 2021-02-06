@@ -10,7 +10,7 @@ Mirroring system: CentOS 7.6
 
 ## Deployment command
 
-### Method I: Only iOS
+### Method I : Only iOS
 
 ```
 curl -sL https://rpm.nodesource.com/setup_12.x | bash -
@@ -24,7 +24,7 @@ pm2 save
 pm2 startup
 ```
 
-### Method II: Only PC
+### Method II : Only PC
 
 1. Install...
 
@@ -82,7 +82,7 @@ systemctl enable supervisord
 
 2. Server: Your VPS ip
 
-3. Port: 8886
+3. Port: 8887
 
 ## VPS Firewall Rules
 
