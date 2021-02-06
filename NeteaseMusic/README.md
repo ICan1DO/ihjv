@@ -26,16 +26,40 @@ pm2 startup
 
 ### Method II: Only PC
 
+1. Install...
+
 ```
-curl -sL https://rpm.nodesource.com/setup_12.x | bash -
-yum install nodejs -y
-npm install pm2 -g
+curl -sL https://rpm.nodesource.com/setup_10.x | bash - 
+yum -y install nodejs -y
+yum -y install epel-release
+yum -y install supervisor
 yum install git
 git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git
 cd UnblockNeteaseMusic
-pm2 start app.js --name UnblockNeteaseMusic -- -s -o kuwo qq migu -p 8886:8887
-pm2 save
-pm2 startup
+vim /etc/supervisord.d/netease.ini
+```
+
+2. Input `i` to modify file content
+
+```
+[supervisord]
+nodaemon=false
+
+[program:netease]
+user=root
+directory=/root/UnblockNeteaseMusic
+command=/usr/bin/node app.js -p 8887
+autostart=true
+autorestart=true
+```
+
+3. Click `esc` and input `:wq` to save and quit
+
+4. Startup Project
+
+```
+systemctl start supervisord
+systemctl enable supervisord
 ```
 
 ## Install Crt
@@ -64,7 +88,7 @@ pm2 startup
 
 1. Rule Type: TCP
 
-2. Port: 8886/8889
+2. Port: 8887/8889
 
 ## pm2 Common Commands
 
