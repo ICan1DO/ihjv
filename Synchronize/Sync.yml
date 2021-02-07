@@ -2,7 +2,7 @@ name: Task_Name # Task name
 
 on:
   schedule:
-    - cron: 'cron expression' # Execution time
+    - cron: 'Cron_expression' # Execution time
   workflow_dispatch:
   watch:
     types: started
