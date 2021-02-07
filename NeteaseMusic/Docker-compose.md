@@ -2,7 +2,7 @@
 
 Use the server to build an unlock Netease Cloud Music node.
 
-## IMPORTANT
+## ⚠️ IMPORTANT ⚠️
 
 The UnblockNeteaseMusic node built by Docker-compose cannot enable *strict* mode!
 
