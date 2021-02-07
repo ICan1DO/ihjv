@@ -1,8 +1,8 @@
-## Notes
+## 📔 Notes
 
 Writing this document in **Chinese English** forces readers to study patiently.
 
-## Server Configuration
+## 💻 Server Configuration
 
 1. VPS: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
 
@@ -10,11 +10,11 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html)
 
-## Coming soon
+## 🤯 Coming soon
 
 - [ ] [How to use Tencent Cloud deployment and execute Jingdong Javascript](https://github.com/YamTian/Notes/tree/master/TXClouds)
 
-## Done
+## 🥰 Done
 
 - [x] [How to use python3 + selenium + driver in VPS](https://github.com/YamTian/Notes/tree/master/Python3.7.2)
 
@@ -23,7 +23,7 @@ Writing this document in **Chinese English** forces readers to study patiently.
 - [x] [How to use VPS deployment a node to unblock NetEase Cloud Music](https://github.com/YamTian/Notes/tree/master/NeteaseMusic)
 
 
-## Observe Rules
+## ⚠️ Observe Rules
 
 🚫 **Prohibit Share to masterland**
 
