@@ -38,21 +38,27 @@ Comparison table
 
 ## Step 2: View the creation log
 
-`docker logs -f jd`
+```
+docker logs -f jd
+```
 
 > Until the words `容器启动成功...` appears, it means the start is successful, press `Ctrl+C` to exit and view the log
 
 ## Step 3: git_pull
 
-`docker exec -it jd2 bash git_pull`
+```
+docker exec -it jd bash git_pull
+```
 
 ## Step 4: Verify that the installation is successful
 
 Run the `jd_fruit.js` script immediately once manually
 
-`docker exec -it jd bash jd.sh fruit now`
+```
+docker exec -it jd bash jd.sh fruit now
+```
 
--Output `"请先获取Cookie..."`, it will be regarded as successful
+- Output `"请先获取Cookie..."`, it will be regarded as successful
 
 ## Step 5: Edit the file
 
@@ -60,19 +66,22 @@ Run the `jd_fruit.js` script immediately once manually
 
 ```
 cd /docker/jd/config
+vi auth.json
 ```
 
-`vi auth.json`
+-  `auth.json` User account and password. After modifying, press `ESC` and enter `:wq` to save and exit.
 
--  `auth.json` User account and password. After modifying, press `ESC` and enter `:wq` to save and exit
+```
+vi congif.sh
+```
 
-`vi congif.sh`
+- `config.sh` Setting script variables.  After modifying, press `ESC` and enter `:wq` to save and exit.
 
-- `config.sh` Setting script variables, just follow the instructions in the file, after modifying, press `ESC` to enter `:wq` to save and exit
+```
+vi crontab.list
+```
 
-`vi crontab.list`
-
-- `crontab.list` Setting the running time of the javascript. After writing and modifying according to the format in the file, press `ESC` to enter `:wq` to save and exit
+- `crontab.list` Setting the running time of the javascript.  After modifying, press `ESC` and enter `:wq` to save and exit.
 
 ### Method 2: online editing
 
