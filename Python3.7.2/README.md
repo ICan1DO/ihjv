@@ -18,10 +18,10 @@ Use CentOS 7.6 to run python3 executable file, download selenium and chromedrive
 
 ### Notes
 
-- [x] [1. How to install Python3](https://github.com/YamTian/Notes/blob/main/Python3.7.2/Python3.7.2.md)
+- [x] [1. How to install Python3](https://github.com/YamTian/Notes/blob/master/Python3.7.2/Python3.7.2.md)
 
-- [x] [2. How to install selenium and driver](https://github.com/YamTian/Notes/blob/main/Python3.7.2/Selenium%26chromedirver.md)
+- [x] [2. How to install selenium and driver](https://github.com/YamTian/Notes/blob/master/Python3.7.2/Selenium%26chromedirver.md)
 
-- [x] [3. How to verify whether the installation is successful](https://github.com/YamTian/Notes/blob/main/Python3.7.2/Verification.md)
+- [x] [3. How to verify whether the installation is successful](https://github.com/YamTian/Notes/blob/master/Python3.7.2/Verification.md)
 
-- [x] [4. Solve the problem of coexistence of python2 and python3](https://github.com/YamTian/Notes/blob/main/Python3.7.2/Coexist.md)
+- [x] [4. Solve the problem of coexistence of python2 and python3](https://github.com/YamTian/Notes/blob/master/Python3.7.2/Coexist.md)
