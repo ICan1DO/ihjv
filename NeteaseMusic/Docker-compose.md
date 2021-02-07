@@ -4,9 +4,9 @@ Use the server to build an unlock Netease Cloud Music node.
 
 ## ⚠️ IMPORTANT ⚠️
 
-The UnblockNeteaseMusic node built by Docker-compose cannot enable *strict* mode!
+The UnblockNeteaseMusic node built by Docker-compose cannot enable **strict** mode!
 
-So I don't recommend *sharing* this node with anyone.
+So I don't recommend **sharing** this node with anyone.
 
 ## Server Configuration
 
@@ -26,7 +26,7 @@ yum install python-pip
 ```
 pip install docker-compose
 docker pull nondanee/unblockneteasemusic
-docker run --name music -p 8886:8080 nondanee/unblockneteasemusic
+docker run --name music -p 8887:8080 nondanee/unblockneteasemusic
 docker ps
 ```
 
@@ -36,10 +36,10 @@ docker ps
 
 2. Server: Your VPS ip
 
-3. Port: 8886
+3. Port: 8887
 
 ## VPS Firewall Rules
 
 1. Rule Type: TCP
 
-2. Port: 8886
+2. Port: 8887
