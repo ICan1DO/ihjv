@@ -4,11 +4,11 @@
   Author: YamTian
 </h1>
 
-### Description
+### 📜 Description
 
 Use CentOS 7.6 to run python3 executable file, download selenium and chromedriver.
 
-### Server Configuration
+### 💻 Server Configuration
 
 1. Server: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
 
@@ -16,7 +16,7 @@ Use CentOS 7.6 to run python3 executable file, download selenium and chromedrive
 
 3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html)
 
-### Notes
+### 📔 Notes
 
 - [x] [1. How to install Python3](https://github.com/YamTian/Notes/blob/master/Python3.7.2/Python3.7.2.md)
 
