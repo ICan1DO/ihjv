@@ -22,6 +22,8 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 - [x] [How to use VPS deployment a node to unblock NetEase Cloud Music](https://github.com/YamTian/Notes/tree/master/NeteaseMusic)
 
+- [x] [How to use GitHub Actions sync repository](https://github.com/YamTian/Notes/tree/master/Synchronize)
+
 
 ## ⚠️ Observe Rules
 
