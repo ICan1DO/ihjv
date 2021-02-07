@@ -12,7 +12,7 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 ## Coming soon
 
-- [ ] How to use Tencent Cloud deployment and execute Jingdong Javascript
+- [ ] [How to use Tencent Cloud deployment and execute Jingdong Javascript](https://github.com/YamTian/Notes/tree/master/TXClouds)
 
 ## Done
 
