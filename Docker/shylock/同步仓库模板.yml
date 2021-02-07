@@ -1,5 +1,4 @@
 # File: .github/workflows/repo-sync.yml
-# task_name 的格式 sync-Author-Repository-Branch
 name: task_name # 任务名称
 on:
   schedule:
