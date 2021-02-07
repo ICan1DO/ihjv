@@ -9,7 +9,7 @@ name: Task_Name # Task name
 Line 25
 
 ```
-      - name: Task_Name # Task name
+- name: Task_Name # Task name
 ```
 
 Task_Name -> You give this task a name.
@@ -19,7 +19,7 @@ Task_Name -> You give this task a name.
 Line 5
 
 ```
-    - cron: 'Cron_expression' # Execution time
+- cron: 'Cron_expression' # Execution time
 ```
 
 Cron_expression -> The time of task execution, modified here to Cron expression.
@@ -31,7 +31,7 @@ Cron_expression -> The time of task execution, modified here to Cron expression.
 Line 29
 
 ```
-          source_repo: "Git_Address" # Git address of this repository
+source_repo: "Git_Address" # Git address of this repository
 ```
 
 Git_Address -> Modify it to the git address you need to synchronize.
@@ -43,7 +43,7 @@ Git_Address -> Modify it to the git address you need to synchronize.
 Line 30
 
 ```
-          source_branch: "Git_Branch" # Branch of this repository
+source_branch: "Git_Branch" # Branch of this repository
 ```
 
 Git_Branch -> Modify it to the branch you need to synchronize.
@@ -55,7 +55,7 @@ Git_Branch -> Modify it to the branch you need to synchronize.
 Line 31
 
 ```
-          destination_branch: "Your_Branch" # Create your own branch
+destination_branch: "Your_Branch" # Create your own branch
 ```
 
 Your_Branch -> Create a new branch of your own.
