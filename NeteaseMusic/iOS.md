@@ -40,4 +40,4 @@ pm2 startup
 
 1. Rule Type: TCP
 
-2. Port: 8887/8889
+2. Port: 8888
