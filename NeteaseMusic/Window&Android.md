@@ -17,6 +17,9 @@ curl -sL https://rpm.nodesource.com/setup_12.x | bash -
 yum -y install nodejs -y
 yum -y install epel-release
 yum -y install supervisor
+```
+
+```
 yum install git
 git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git
 cd UnblockNeteaseMusic
