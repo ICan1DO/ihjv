@@ -59,3 +59,7 @@ destination_branch: "Your_Branch" # Create your own branch
 ```
 
 Your_Branch -> Create a new branch of your own.
+
+## Sample
+
+[Sync.yml.smaple](https://github.com/YamTian/Notes/blob/master/Synchronize/Sync.yml.smaple)
