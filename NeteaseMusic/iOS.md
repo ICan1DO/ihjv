@@ -15,8 +15,10 @@ curl -sL https://rpm.nodesource.com/setup_12.x | bash -
 yum install nodejs -y
 npm install pm2 -g
 yum install git
-git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git
-cd UnblockNeteaseMusic
+```
+
+```
+git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git && cd UnblockNeteaseMusic
 pm2 start app.js --name UnblockNeteaseMusic -- -s -o kuwo qq migu -p 8888:8889 -e https://music.163.com
 pm2 save && pm2 startup && pm2 log UnblockNeteaseMusic
 ```
