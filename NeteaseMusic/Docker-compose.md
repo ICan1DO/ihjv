@@ -20,11 +20,12 @@ Mirroring system: CentOS 7.6
 yum install docker -y
 systemctl start docker
 systemctl enable docker
-yum install python-pip
+yum install python-pip3
+pip3 install --upgrade pip3
 ```
 
 ```
-pip install docker-compose
+pip3 install docker-compose
 docker pull nondanee/unblockneteasemusic
 docker run --name music -p 8887:8080 nondanee/unblockneteasemusic
 docker ps
