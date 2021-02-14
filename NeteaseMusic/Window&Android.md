@@ -35,7 +35,7 @@ nodaemon=false
 [program:netease]
 user=root
 directory=/root/UnblockNeteaseMusic
-command=/usr/bin/node app.js -p 8886
+command=/usr/bin/node app.js -o kuwo qq migu -p 8886 
 autostart=true
 autorestart=true
 ```
