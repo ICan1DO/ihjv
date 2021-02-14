@@ -1,13 +1,13 @@
-name: Task_Name # Task name
+name: sync-dockere-jd-base-master # Task name
 
 on:
   schedule:
-    - cron: 'Cron_expression' # Execution time
+    - cron: '50 16 * * *' # Execution time
   workflow_dispatch:
   watch:
     types: started
   push:
-    branches: [ main ]
+    branches: [ master ]
   repository_dispatch:
     types: sync-scripts
     
@@ -22,11 +22,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Task_Name # Task name
+      - name: sync-dockere-jd-base-master # Task name
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "Git_Address" # Git address of this repository
-          source_branch: "Git_Branch" # Branch of this repository
-          destination_branch: "Your_Branch" # Create your own branch
+          source_repo: "https://github.com/dockere/jd-base.git" # Git address of this repository
+          source_branch: "master" # Branch of this repository
+          destination_branch: "dockere-jd-base-master" # Create your own branch
           github_token: ${{ secrets.PAT }}
