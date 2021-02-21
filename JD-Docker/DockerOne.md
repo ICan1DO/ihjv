@@ -2,7 +2,9 @@
 
 1. If you have installed Docker before, you need to uninstall it first
 
-```sudo yum remove docker docker-common docker-selinux docker-engine```
+```
+sudo yum remove docker docker-common docker-selinux docker-engine
+```
 
 2. Install
 
