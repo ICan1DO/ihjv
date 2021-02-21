@@ -2,6 +2,8 @@
 
 Writing this document in **Chinese English** forces readers to study patiently.
 
+用中式英文写文档是为了过滤伸手党, 以及让人学会耐心.
+
 ## 💻 Server Configuration
 
 1. VPS: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
