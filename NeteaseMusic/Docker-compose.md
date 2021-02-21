@@ -27,8 +27,14 @@ pip3 install --upgrade pip3
 ```
 pip3 install docker-compose
 docker pull nondanee/unblockneteasemusic
-docker run --name music -p 8887:8080 nondanee/unblockneteasemusic
-docker ps
+```
+
+```
+docker run -dit \
+-p 8887:8080 \
+--name mu \
+--restart always \
+nondanee/unblockneteasemusic
 ```
 
 ## NeteaseMusic(PC) Proxy Servers
