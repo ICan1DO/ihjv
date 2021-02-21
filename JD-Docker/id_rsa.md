@@ -41,11 +41,11 @@ pBBqa/rO5yyYmeJZAAAAFHJvb3RAbmFzLmV2aW5lLnByZXNzAQIDBAUG
 ```
 
 ```
-docker cp ~/.ssh/id_rsa jd2:/root/.ssh
+docker cp ~/.ssh/id_rsa jd:/root/.ssh
 ```
 
 ```
-docker exec -it jd2 bash
+docker exec -it jd bash
 ```
 
 ```
@@ -83,5 +83,5 @@ exit
 ```
 
 ```
-cd && docker exec -it jd2 bash git_pull
+cd && docker exec -it jd bash git_pull
 ```
