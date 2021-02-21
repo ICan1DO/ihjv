@@ -29,7 +29,7 @@ cat xxxxxx.tar.gz | docker import - new_repository_name:latest1
 ### Step 5: Change Tag
 
 ```
-docker new_repository_name:latest1 docker_hub/docker_repository:latest2
+docker tag new_repository_name:latest1 docker_hub/docker_repository:latest2
 ```
 
 ### Step 6: Push
