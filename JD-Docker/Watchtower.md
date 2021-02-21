@@ -3,6 +3,10 @@ vi ~/.watchtower.list
 ```
 
 ```
+jd
+```
+
+```
 docker run -d \
 --name wat \
 -v /var/run/docker.sock:/var/run/docker.sock \
