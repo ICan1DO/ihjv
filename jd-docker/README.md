@@ -8,7 +8,11 @@
 
 The docker hub image file has been deleted, so I decided to make this [repository](https://github.com/YamTian/Notes) public.
 
+Docker Hub 里面的 iamge 已经给原作者删除, 因此我决定公开此仓库.
+
 Unfortunately, using this method to deploy Docker is no longer valid.
+
+不幸的是, 使用此教程的部署方法已经不再生效.
 
 ### 💻 Server Configuration
 
