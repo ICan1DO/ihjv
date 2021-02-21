@@ -24,11 +24,11 @@ Unfortunately, using this method to deploy Docker is no longer valid.
 
 ### 📔 Notes
 
-- [x] [Basic deployment and execution](https://github.com/YamTian/Notes/blob/master/Docker/DockerOne.md)
+- [x] [Basic deployment and execution](https://github.com/YamTian/Notes/blob/master/JD-Docker/DockerOne.md)
 
-- [x] [Multi-container concurrency](https://github.com/YamTian/Notes/blob/master/Docker/DockerTwo.md)
+- [x] [Multi-container concurrency](https://github.com/YamTian/Notes/blob/master/JD-Docker/DockerTwo.md)
 
-- [x] [Basic command query](https://github.com/YamTian/Notes/blob/master/Docker/Command.md)
+- [x] [Basic command query](https://github.com/YamTian/Notes/blob/master/JD-Docker/Command.md)
 
 ### 👨‍💻 Reference
 
