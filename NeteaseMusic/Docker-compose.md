@@ -32,7 +32,7 @@ docker pull nondanee/unblockneteasemusic
 ```
 docker run -dit \
 -p 8887:8080 \
---name mu \
+--name unblockneteasemusic \
 --restart always \
 nondanee/unblockneteasemusic
 ```
