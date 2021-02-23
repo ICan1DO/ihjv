@@ -2,12 +2,12 @@
 name: Synchronize
 on:
   schedule:
-    - cron: '0 0-16,23 * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
   watch:
     types: started
   push:
-    branches: [ main ]
+    branches: [ yml ]
   repository_dispatch:
     types: sync-scripts
     
@@ -27,7 +27,7 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "git@gitee.com:lxk0301/jd_scripts.git"
+          source_repo: "git@github.com:YamTian/Notes.git"
           source_branch: "master"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
