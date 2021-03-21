@@ -11,11 +11,12 @@ Use the server to build a node for unlocking NetEase Cloud Music.
 2. Mirror system: CentOS 7.6
 3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html) or [BT](https://www.bt.cn)
 ### 📔 Notes
-- [x] [Build an iOS & Mac node by pm2](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/pm2.md)
-- [x] [Build an PC & Android node by supervisord](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/supervisord.md)
-- [x] [Build by Docker](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker.md)
-  - [x] [PC & Androdi](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker_pc.md)
-  - [x] [iOS & Mac](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker_ios.md)
+- [x] PC & Android
+  - [x] [Build by supervisord](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/supervisord.md)
+  - [x] [Build by docker](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker_pc.md)
+- [x] iOS & Mac 
+  - [x] [Build by pm2](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/pm2.md)
+  - [x] [Build by docker](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker_ios.md)
 - [x] [pm2 Common commands](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/pm2.md)
 ### 👨‍💻 Reference
 - [nondanee/UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)
