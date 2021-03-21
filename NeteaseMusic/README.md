@@ -5,15 +5,12 @@
 </h1>
 
 ### 📜 Description
-
 Use the server to build a node for unlocking NetEase Cloud Music.
 
 ### 💻 Server Configuration
 
 1. Server: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
-
 2. Mirror system: CentOS 7.6
-
 3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html)
 
 ### 📔 Notes
