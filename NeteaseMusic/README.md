@@ -22,7 +22,7 @@ Use the server to build a node for unlocking NetEase Cloud Music.
 
 - [x] [Build an Window & Android node](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Window&Android.md)
 
-- [x] [Build an Window & Android node by Docker-compose](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker-compose.md)
+- [x] [Build an Window & Android node by Docker-compose](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker.md)
 
 - [x] [pm2 Common commands](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/pm2.md)
 
