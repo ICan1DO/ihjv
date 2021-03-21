@@ -16,8 +16,8 @@ pm2 start app.js --name UnblockNeteaseMusic -- -s -o kuwo qq migu -p 8888:8889 -
 pm2 save && pm2 startup && pm2 log UnblockNeteaseMusic
 ```
 2. Install Crt
-2.1. Use safari to click [here](https://raw.githubusercontent.com/nondanee/UnblockNeteaseMusic/master/ca.crt) to enter and install the certificate.
-2.2. Please refer to this [document —— Trust manually installed certificate profiles in iOS and iPadOS](https://support.apple.com/en-us/HT204477)
+  2.1. Use safari to click [here](https://raw.githubusercontent.com/nondanee/UnblockNeteaseMusic/master/ca.crt) to enter and install the certificate.
+  2.2. Please refer to this [document —— Trust manually installed certificate profiles in iOS and iPadOS](https://support.apple.com/en-us/HT204477)
 ## iOS Proxy Rules
 ### 1. Remote URL
 - [Quantumult X](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/NetEaseMusic/NetEaseMusic.list)
