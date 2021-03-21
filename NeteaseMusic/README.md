@@ -18,11 +18,14 @@ Use the server to build a node for unlocking NetEase Cloud Music.
 
 ### 📔 Notes
 
-- [x] [Build an iOS node](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/iOS.md)
+- [x] [Build an iOS node by pm2](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/iOS.md)
 
-- [x] [Build an Window & Android node](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Window&Android.md)
+- [x] [Build an PC & Android node by supervisord](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Window&Android.md)
 
-- [x] [Build an Window & Android node by Docker-compose](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker.md)
+- [x] [Build by Docker](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker.md)
+
+  - [x] [PC & Androdi](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker.md)
+  - [x] [iOS & Mac](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/Docker.md)
 
 - [x] [pm2 Common commands](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/pm2.md)
 
