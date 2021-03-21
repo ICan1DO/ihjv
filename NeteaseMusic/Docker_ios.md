@@ -25,4 +25,4 @@ docker ps
 3. Port: 2021
 ## VPS Firewall Rules
 1. Rule Type: TCP
-2. Port: 2020
+2. Port: 2021
