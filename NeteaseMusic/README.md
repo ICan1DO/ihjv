@@ -9,7 +9,7 @@ Use the server to build a node for unlocking NetEase Cloud Music.
 ### 💻 Server Configuration
 1. Server: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
 2. Mirror system: CentOS 7.6
-3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html) or [BT](www.bt.cn)
+3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html) or [BT](https://www.bt.cn)
 ### 📔 Notes
 - [x] [Build an iOS & Mac node by pm2](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/pm2.md)
 - [x] [Build an PC & Android node by supervisord](https://github.com/YamTian/Notes/blob/master/NeteaseMusic/supervisord.md)
