@@ -16,7 +16,7 @@ docker pull nondanee/unblockneteasemusic
 ```
 ### 2. Create a Container
 ```
-ocker run -d -p 2021:8080 --name unblockneteasemusicmusic_ios --restart always nondanee/unblockneteasemusic -s -e https://music.163.com
+docker run -d -p 2021:8080 --name unblockneteasemusicmusic_ios --restart always nondanee/unblockneteasemusic -s -e https://music.163.com
 docker ps
 ```
 ## NeteaseCloudMusic(iOS/Mac) Server Setting
