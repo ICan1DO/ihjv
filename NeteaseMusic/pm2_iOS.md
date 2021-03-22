@@ -19,7 +19,7 @@ npm install pm2 -g
 yum install git
 git clone https://github.com.cnpmjs.org/nondanee/UnblockNeteaseMusic.git
 cd UnblockNeteaseMusic
-pm2 start app.js --name UnblockNeteaseMusic -- -s -o kuwo qq migu -p 8082:8080 -e https://music.163.com
+pm2 start app.js --name UnblockNeteaseMusic -- -s -o kuwo qq migu -p 8882:8082 -e https://music.163.com
 pm2 save && pm2 startup && pm2 log UnblockNeteaseMusic
 ```
 
@@ -78,10 +78,10 @@ IP-CIDR,59.111.181.60/32
 
 2. Server: Your VPS ip
 
-3. Port: 8082
+3. Port: 8882
 
 ## VPS Firewall Rules
 
 1. Rule Type: TCP
 
-2. Port: 8082
+2. Port: 8882
