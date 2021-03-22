@@ -25,7 +25,7 @@ docker pull nondanee/unblockneteasemusic
 ### 2. Create a Container
 
 ```
-docker run -d -p 2021:8080 --name unblockneteasemusicmusic_ios --restart always nondanee/unblockneteasemusic -s -e https://music.163.com
+docker run -d -p 8084:8080 --name unblockneteasemusicmusic_ios --restart always nondanee/unblockneteasemusic -s -o kuwo qq migu -e https://music.163.com
 docker ps
 ```
 
@@ -35,10 +35,10 @@ docker ps
 
 2. Server: Your VPS ip
 
-3. Port: 2021
+3. Port: 8084
 
 ## VPS Firewall Rules
 
 1. Rule Type: TCP
 
-2. Port: 2021
+2. Port: 8084
