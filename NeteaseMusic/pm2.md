@@ -78,10 +78,10 @@ IP-CIDR,59.111.181.60/32
 
 2. Server: Your VPS ip
 
-3. Port: 8888
+3. Port: 8082
 
 ## VPS Firewall Rules
 
 1. Rule Type: TCP
 
-2. Port: 8888
+2. Port: 8082
