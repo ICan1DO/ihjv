@@ -25,7 +25,7 @@ docker pull nondanee/unblockneteasemusic
 ### 2. Create a Container
 
 ```
-docker run -d -p 8083:8080 --name unblockneteasemusicmusic_ios --restart always nondanee/unblockneteasemusic -o kuwo qq migu
+docker run -d -p 8083:8080 --name unblockneteasemusic_ios --restart always nondanee/unblockneteasemusic -o kuwo qq migu
 docker ps
 ```
 
