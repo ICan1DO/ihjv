@@ -32,7 +32,7 @@ nodaemon=false
 [program:netease]
 user=root
 directory=/root/UnblockNeteaseMusic
-command=/usr/bin/node app.js -o kuwo qq migu -p 8886 
+command=/usr/bin/node app.js -o kuwo qq migu -p 8081 
 autostart=true
 autorestart=true
 ```
@@ -52,10 +52,10 @@ systemctl enable supervisord
 
 2. Server: Your VPS ip
 
-3. Port: 8886
+3. Port: 8081
 
 ## VPS Firewall Rules
 
 1. Rule Type: TCP
 
-2. Port: 8886
+2. Port: 8081
