@@ -99,5 +99,5 @@ vi crontab.list
 
 ## Step 3: learn more commands
 
-[Learn to use frequently used Docker commands](https://github.com/YamTian/Notes/blob/main/JD-Docker/Command.md)
+[Learn to use frequently used Docker commands](https://github.com/YamTian/Notes/blob/main/JD-v3/Command.md)
 
