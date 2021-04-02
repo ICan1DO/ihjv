@@ -51,7 +51,7 @@ docker run -d -p 2020:8080 --name music_ios --restart always nondanee/unblocknet
 国内服务器 pc 
 
 ```
-docker run -d -p 2021:8080 --name music_ios --restart always nondanee/unblockneteasemusic -o kuwo qq migu
+docker run -d -p 2021:8080 --name music_pc --restart always nondanee/unblockneteasemusic -o kuwo qq migu
 ```
 
 国外服务器 iOS
