@@ -10,6 +10,8 @@ yum install docker-ce
 
 ### 京东 容器1 v4
 
+1. 第一个容器
+
 ```
 docker run -dit \
 -v /docker/jd/config:/jd/config \
@@ -24,7 +26,7 @@ docker run -dit \
 nevinee/jd:v4
 ```
 
-### 京东 容器2 v4
+2. 第二个容器
 
 ```
 docker run -dit \
