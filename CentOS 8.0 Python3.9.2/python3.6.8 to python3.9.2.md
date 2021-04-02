@@ -25,3 +25,10 @@ mv /usr/bin/pip /usr/bin/pip3_6_old.bak
 ln -s /usr/local/python3/bin/python3 /usr/bin/python
 ln -s /usr/local/python3/bin/pip3 /usr/bin/pip
 ```
+
+### 检查结果
+
+```
+python -V
+pip -V
+```
