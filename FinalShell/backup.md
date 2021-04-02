@@ -8,7 +8,7 @@ yum makecache fast
 yum install docker-ce
 ```
 
-### 京东 容器1 v4
+### 京东 v4
 
 1. 第一个容器
 
