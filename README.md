@@ -14,7 +14,7 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 ## 🤯 Coming soon
 
-- [ ] ~~How to use Tencent Cloud deployment and execute Jingdong Javascript~~(Has expired 🤯)
+- [ ] None
 
 ## 🥰 Done
 
@@ -31,6 +31,10 @@ Writing this document in **Chinese English** forces readers to study patiently.
 - [x] [Record how to use Git](https://github.com/YamTian/Notes/tree/master/git)
 
 - [x] [How to updata python version in CentOS 8.0](https://github.com/YamTian/Notes/tree/master/CentOS%208.0%20Python3.9.2)
+
+## 💀 Give up
+
+- ~~How to use Tencent Cloud deployment and execute Jingdong Javascript~~
 
 ## ⚠️ Observe Rules
 
