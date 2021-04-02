@@ -30,6 +30,12 @@ Unfortunately, using this method to deploy Docker is no longer valid.
 
 - [x] [Basic command query](https://github.com/YamTian/Notes/blob/master/JD-v3/Command.md)
 
+- [x] Backup Certificate
+
+  - [x] [jd_scripts](https://github.com/YamTian/Notes/blob/master/JD-v3/id_rsa/jd_scripts)
+
+  - [x] [jd_shell](https://github.com/YamTian/Notes/blob/master/JD-v3/id_rsa/jd_shell)
+
 ### 👨‍💻 Reference
 
 - EvineDeng
