@@ -18,3 +18,6 @@ git 的一些使用笔记
 
   - [x] [登录命令](https://github.com/YamTian/Notes/blob/master/git/login/login.md)
 
+- [x] 生成证书
+
+  - [x] [生成命令](https://github.com/YamTian/Notes/blob/master/git/id_rsa/id_rsa.md)
