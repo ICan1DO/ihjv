@@ -1,4 +1,4 @@
-1. 安装 docker 服务
+### 安装 docker 服务
 
 ```
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
@@ -8,7 +8,7 @@ sudo yum makecache fast
 sudo yum install docker-ce
 ```
 
-2. 京东 容器1 v4
+### 京东 容器1 v4
 
 ```
 docker run -dit \
@@ -24,7 +24,7 @@ docker run -dit \
 nevinee/jd:v4
 ```
 
-3. 京东 容器2 v4
+### 京东 容器2 v4
 
 ```
 docker run -dit \
@@ -40,27 +40,27 @@ docker run -dit \
 nevinee/jd:v4
 ```
 
-4. 网易云节点
+### 网易云节点
 
-国内服务器 ios
+1. 国内服务器 ios
 
 ```
 docker run -d -p 2020:8080 --name music_ios --restart always nondanee/unblockneteasemusic -s -o kuwo qq migu -e https://music.163.com
 ```
 
-国内服务器 pc 
+2. 国内服务器 pc 
 
 ```
 docker run -d -p 2021:8080 --name music_pc --restart always nondanee/unblockneteasemusic -o kuwo qq migu
 ```
 
-国外服务器 iOS
+3. 国外服务器 iOS
 
 ```
 docker run -d -p 2020:8080 --name music --restart always nondanee/unblockneteasemusic -s -o kuwo joox -e https://music.163.com
 ```
 
-5. 人形Bot
+### 人形Bot
 
 ```
 wget https://raw.githubusercontent.com/Xtao-Labs/PagerMaid-Modify/master/utils/docker.sh -O docker.sh&& chmod +x docker.sh && bash docker.sh
