@@ -20,9 +20,9 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 - [x] [How to use python3 + selenium + chromedriver in VPS](https://github.com/YamTian/Notes/tree/master/Python3.7.2)
 
-- [x] [How to use VPS deployment Docker to execute Jingdong Javascript version 3](https://github.com/YamTian/Notes/tree/master/JD-Docker)
+- [x] [How to use VPS deployment Docker to execute Jingdong Javascript (version 3)](https://github.com/YamTian/Notes/tree/master/JD-Docker)
 
-- [x] [How to use VPS deployment Docker to execute Jingdong Javascript version 4](https://github.com/YamTian/Notes/tree/master/JD-v4)
+- [x] [How to use VPS deployment Docker to execute Jingdong Javascript (version 4)](https://github.com/YamTian/Notes/tree/master/JD-v4)
 
 - [x] [How to use VPS deployment a node to unblock NetEase Cloud Music](https://github.com/YamTian/Notes/tree/master/NeteaseMusic)
 
