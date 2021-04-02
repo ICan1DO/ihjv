@@ -42,13 +42,13 @@ nevinee/jd:v4
 
 ### 网易云节点
 
-1. 国内服务器 ios
+1. 国内服务器 iOS
 
 ```
 docker run -d -p 2020:8080 --name music_ios --restart always nondanee/unblockneteasemusic -s -o kuwo qq migu -e https://music.163.com
 ```
 
-2. 国内服务器 pc 
+2. 国内服务器 PC 
 
 ```
 docker run -d -p 2021:8080 --name music_pc --restart always nondanee/unblockneteasemusic -o kuwo qq migu
@@ -64,4 +64,18 @@ docker run -d -p 2020:8080 --name music --restart always nondanee/unblocknetease
 
 ```
 wget https://raw.githubusercontent.com/Xtao-Labs/PagerMaid-Modify/master/utils/docker.sh -O docker.sh&& chmod +x docker.sh && bash docker.sh
+```
+
+### 宝塔面板
+
+1. 安装命令
+
+```
+yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+```
+
+2. 取消登录
+
+```
+sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
 ```
