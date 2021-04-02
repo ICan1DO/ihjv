@@ -1,11 +1,11 @@
 ### 安装 docker 服务
 
 ```
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+yum install -y yum-utils device-mapper-persistent-data lvm2
 wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo sed -i 's+download.docker.com+mirrors.bfsu.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
-sudo yum makecache fast
-sudo yum install docker-ce
+sed -i 's+download.docker.com+mirrors.bfsu.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
+yum makecache fast
+yum install docker-ce
 ```
 
 ### 京东 容器1 v4
