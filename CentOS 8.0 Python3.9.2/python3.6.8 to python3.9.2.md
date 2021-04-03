@@ -32,3 +32,19 @@ ln -s /usr/local/python3/bin/pip3 /usr/bin/pip
 python -V
 pip -V
 ```
+
+## 一键命令
+
+```
+wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz
+tar -xf Python-3.9.2.tgz 
+cd Python-3.9.2
+./configure --prefix=/usr/local/python3
+make && make install
+mv /usr/bin/python /usr/bin/python3_6_old.bak
+mv /usr/bin/pip /usr/bin/pip3_6_old.bak
+ln -s /usr/local/python3/bin/python3 /usr/bin/python
+ln -s /usr/local/python3/bin/pip3 /usr/bin/pip
+python -V
+pip -V
+```
