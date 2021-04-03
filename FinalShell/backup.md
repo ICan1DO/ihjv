@@ -42,6 +42,22 @@ docker run -dit \
 nevinee/jd:v4
 ```
 
+### 京东 v4-bot
+
+```
+docker run -dit \
+-v /docker/jd/config:/jd/config \
+-v /docker/jd/log:/jd/log \
+-v /docker/jd/own:/jd/own \
+-v /docker/jd/scripts:/jd/scripts \
+-e ENABLE_HANGUP=true \
+-e ENABLE_TG_BOT=true \
+--name jd \
+--hostname jd \
+--restart always \
+nevinee/jd:v4-bot
+```
+
 ### 网易云节点
 
 1. 国内服务器 iOS
