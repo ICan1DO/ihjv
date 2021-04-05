@@ -1,0 +1,11 @@
+{
+    "user_id": null,
+    "bot_token": "",
+    "api_id": "",
+    "api_hash": "",
+    "proxy": false,
+    "proxy_type": "", 
+    "proxy_add": "", 
+    "proxy_port": "",
+    "StartCMD": false
+}
