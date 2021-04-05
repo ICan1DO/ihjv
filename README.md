@@ -10,7 +10,7 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 2. Mirror system: CentOS 7.6
 
-3. SSH Tool: [FinalShell](http://www.hostbuf.com/t/988.html)
+3. SSH/SFTP Tool: [FinalShell](http://www.hostbuf.com/t/988.html)
 
 ## 🤯 Coming soon
 
