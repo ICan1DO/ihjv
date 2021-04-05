@@ -58,14 +58,23 @@ rm -rf /usr/bin/python
 rm -rf /usr/bin/py
 ln -s /usr/local/bin/python3.9  /usr/bin/python
 ```
+### 8. 升级pip
 
-### 8. 验证是否成功
+```
+pip install --upgrade pip
+```
+
+### 9. 验证是否成功
 
 ```
 python -V
+pip -V
 ```
 
 `>>> Python 3.9.2`
+`>>> pip 21.0.1 from /usr/local/lib/python3.9/site-packages/pip (python 3.9)`
+
+
 
 ### 快速命令
 
@@ -88,5 +97,7 @@ vim /usr/libexec/urlgrabber-ext-down
 rm -rf /usr/bin/python
 rm -rf /usr/bin/py
 ln -s /usr/local/bin/python3.9  /usr/bin/python
+pip install --upgrade pip
 python -V
+pip -V
 ```
