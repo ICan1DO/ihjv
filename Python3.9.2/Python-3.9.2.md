@@ -72,6 +72,7 @@ pip -V
 ```
 
 `>>> Python 3.9.2`
+
 `>>> pip 21.0.1 from /usr/local/lib/python3.9/site-packages/pip (python 3.9)`
 
 
