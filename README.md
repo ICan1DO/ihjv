@@ -18,23 +18,23 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 ## 🥰 Done
 
-- [x] [Use python3 + selenium + chromedriver in VPS](https://github.com/YamTian/Notes/tree/master/Python3.7.2)
+- [x] [Use python3 & selenium & chromedriver in VPS](https://github.com/YamTian/Notes/tree/master/Python3.7.2)
 
 - [x] [Updata python version in VPS](https://github.com/YamTian/Notes/tree/master/Python3.9.2)
 
-- [x] [Use VPS deployment Docker to execute Jingdong Javascript (version 3)](https://github.com/YamTian/Notes/tree/master/JD-v3)
+- [x] [Deployment Docker to execute Jingdong Javascript (version 3)](https://github.com/YamTian/Notes/tree/master/JD-v3)
 
-- [x] [Use VPS deployment Docker to execute Jingdong Javascript (version 4)](https://github.com/YamTian/Notes/tree/master/JD-v4)
+- [x] [Deployment Docker to execute Jingdong Javascript (version 4)](https://github.com/YamTian/Notes/tree/master/JD-v4)
 
-- [x] [Use VPS deployment Docker to execute Jingdong Javascript (version 4-bot)](https://github.com/YamTian/Notes/tree/master/JD-v4-bot)
+- [x] [Deployment Docker to execute Jingdong Javascript (version 4-bot)](https://github.com/YamTian/Notes/tree/master/JD-v4-bot)
 
-- [x] [Use VPS deployment a node to unblock NetEase Cloud Music](https://github.com/YamTian/Notes/tree/master/NeteaseMusic)
+- [x] [Use WatchTower to pull docker's images automatically](https://github.com/YamTian/Notes/blob/master/WatchTower)
+
+- [x] [Deployment a node to unblock NetEase Cloud Music](https://github.com/YamTian/Notes/tree/master/NeteaseMusic)
 
 - [x] [Use GitHub Actions sync repository](https://github.com/YamTian/Notes/tree/master/Synchronize)
 
 - [x] [Git](https://github.com/YamTian/Notes/tree/master/git)
-
-- [x] [Use WatchTower to pull images automatically](https://github.com/YamTian/Notes/blob/master/WatchTower)
 
 ## 💀 Give up
 
