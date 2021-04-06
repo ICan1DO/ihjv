@@ -18,6 +18,6 @@ VPS Docker 薅京东羊毛 V4-bot 版本
 
   - [x] [jd_shell](https://github.com/YamTian/Notes/blob/master/JD-v4-bot/id_rsa/jd_shell)
 
-  ### 👨‍💻 参考
+### 👨‍💻 参考
 
 - [nevinee](https://hub.docker.com/r/nevinee/jd)
