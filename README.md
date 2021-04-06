@@ -32,8 +32,6 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 - [x] [Record how to use Git](https://github.com/YamTian/Notes/tree/master/git)
 
-- [x] [How to updata python version in CentOS 8.0](https://github.com/YamTian/Notes/tree/master/CentOS%208.0%20Python3.9.2)
-
 - [x] [How to use WatchTower to pull images](https://github.com/YamTian/Notes/blob/master/WatchTower)
 
 ## 💀 Give up
