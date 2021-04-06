@@ -72,7 +72,7 @@ cd /docker/jd/config
 vi congif.sh
 ```
 
-- 按 `i` 开始编辑模式, 完成后按 `esc` 并输入 `:wq` 后回车即可
+按 `i` 开始编辑模式, 完成后按 `esc` 并输入 `:wq` 后回车即可
 
 3. 修改 `crontab.list` 文件
 
@@ -80,7 +80,7 @@ vi congif.sh
 vi crontab.list
 ```
 
-- 按 `i` 开始编辑模式, 完成后按 `esc` 并输入 `:wq` 后回车即可
+按 `i` 开始编辑模式, 完成后按 `esc` 并输入 `:wq` 后回车即可
 
 4. 修改 `bot.json` 文件
 
@@ -88,7 +88,7 @@ vi crontab.list
 vi bot.json
 ```
 
-- 按 `i` 开始编辑模式, 完成后按 `esc` 并输入 `:wq` 后回车即可
+按 `i` 开始编辑模式, 完成后按 `esc` 并输入 `:wq` 后回车即可
 
 ## 步骤 7: 重启容器并登录 Telegram
 
@@ -98,4 +98,4 @@ vi bot.json
 docker restart jd
 ```
 
-2. 按照英文提示输入手机号和验证码
+2. 稍等片刻后可在 Telegram 上使用机器人命令
