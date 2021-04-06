@@ -32,7 +32,7 @@ Writing this document in **Chinese English** forces readers to study patiently.
 
 - [x] [Record how to use Git](https://github.com/YamTian/Notes/tree/master/git)
 
-- [x] [How to use WatchTower to pull images](https://github.com/YamTian/Notes/blob/master/WatchTower)
+- [x] [How to use WatchTower to pull images automatically](https://github.com/YamTian/Notes/blob/master/WatchTower)
 
 ## 💀 Give up
 
