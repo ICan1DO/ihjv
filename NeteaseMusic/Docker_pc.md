@@ -35,10 +35,10 @@ docker ps
 
 2. Server: Your VPS ip
 
-3. Port: 2020
+3. Port: 8083
 
 ## VPS Firewall Rules
 
 1. Rule Type: TCP
 
-2. Port: 2020
+2. Port: 8083
