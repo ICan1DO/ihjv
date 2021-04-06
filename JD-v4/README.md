@@ -17,3 +17,7 @@ VPS Docker 薅京东羊毛 V4版本
   - [x] [jd_sctipts](https://github.com/YamTian/Notes/blob/master/JD-v4/id_rsa/jd_scripts)
 
   - [x] [jd_shell](https://github.com/YamTian/Notes/blob/master/JD-v4/id_rsa/jd_shell)
+
+  ### 👨‍💻 参考
+
+- [nevinee](https://hub.docker.com/r/nevinee/jd)
