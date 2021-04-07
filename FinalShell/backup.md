@@ -44,6 +44,8 @@ nevinee/jd:v4
 
 ### 京东 v4-bot
 
+1. 第一个容器
+
 ```
 docker run -dit \
 -v /docker/jd/config:/jd/config \
@@ -56,6 +58,35 @@ docker run -dit \
 --hostname jd \
 --restart always \
 nevinee/jd:v4-bot
+```
+
+2. 第二个容器
+
+```
+docker run -dit \
+-v /docker/jd2/config:/jd/config \
+-v /docker/jd2/log:/jd/log \
+-v /docker/jd2/own:/jd/own \
+-v /docker/jd2/scripts:/jd/scripts \
+-e ENABLE_HANGUP=true \
+-e ENABLE_TG_BOT=true \
+--name jd2 \
+--hostname jd \
+--restart always \
+nevinee/jd:v4-bot
+```
+
+3. 机器人命令
+
+```
+start - 开始使用本程序
+help - 获取帮助
+node - 前台执行脚本
+cmd - 执行cmd命令
+snode - 后台执行脚本
+log - 选择查看执行日志
+getfile - 获取jd目录下文件
+getcookie - 扫码获取cookie
 ```
 
 ### 网易云节点
