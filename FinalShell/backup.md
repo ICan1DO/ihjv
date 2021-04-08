@@ -80,13 +80,22 @@ nevinee/jd:v4-bot
 
 ```
 start - 开始使用本程序
-help - 获取帮助
-node - 前台执行脚本
 cmd - 执行cmd命令
+node - 前台执行脚本
 snode - 后台执行脚本
+setshort - 设置快捷命令
+a - 运行快捷命令
 log - 选择查看执行日志
 getfile - 获取jd目录下文件
 getcookie - 扫码获取cookie
+```
+
+4. 快捷命令
+
+```
+更新脚本-->jup
+获取互助码-->jcode
+京豆通知-->jtask bean_change now
 ```
 
 ### 网易云节点
